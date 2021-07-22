@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@import 'swiper/swiper.scss';
+@import "swiper/components/pagination/pagination.scss";
+@import "swiper/components/navigation/navigation.scss";
+
 :root {
   --primary: #A020F0;
   --primary-light: #D090F8;
@@ -14,6 +18,8 @@
   --background: #601390;
 
   --white: #FFFFFF;
+
+  --swiper-navigation-color: #FFF;
 }
 
 @media (max-width: 1080px) {

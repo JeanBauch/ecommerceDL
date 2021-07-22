@@ -2,6 +2,7 @@
   height: 7rem;
   width: 100%;
   position: fixed;
+  margin-top: 0.875rem;
 }
 
 .navbar{
@@ -13,8 +14,6 @@
   align-items: center;
 
   padding: 0 1rem;
-
-  border: 1px solid red;
 }
 
 .menuLeft {
@@ -31,15 +30,26 @@
 }
 
 .menuRight{
+  display: flex;
+
   a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .7s ease;
 
     p{
       font-size: 1rem;
       color: #B3B3B3;
       margin-left: 10px;
+      transition: .7s ease;
+    }
+
+    &:hover{
+      transform: translate3d(0,-4px,0);
+      p{
+        color: var(--white);
+      }
     }
   }
   
@@ -50,14 +60,152 @@
   }
 }
 
-.menuMobile {
-  display: none;
-  width: 50px;
-  height: 50px;
+.link{
+  display: inline-block;
 
-  background: var(--primary-dark);
+  transition: .5s ease;
+
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #B3B3B3;
+
+  &::after{
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+
+    transform: translate(15%, -150%);
+    transition: .5s ease;
+
+    background-color: var(--white);
+  }
+
+  &:hover{
+    opacity: .8;
+    color: var(--white);
+    &::after{
+      width: 80%
+    }
+  }
+}
+
+.toggleMenu{
+  display: none;
 
   @media (max-width: 960px) {
     display: block;
+  }
+}
+
+.menuMobile {
+  display: none;
+  width: 60px;
+  height: 60px;
+
+  
+  border-radius: 10px;
+  cursor: pointer;
+
+  position: relative;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+
+    top: 30%;
+    left: 15%;
+
+    width: 70%;
+    height: 10%;
+    border-radius: 30px;
+
+    background-color: var(--white);
+
+    transition: 1s ease;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+
+    top: 60%;
+    left: 44%;
+
+    width: 40%;
+    height: 10%;
+    border-radius: 30px;
+
+    background-color: var(--white);
+
+    transition: 1s ease;
+  }
+}
+
+#menuMobile:checked ~ label .menuMobile::after{
+  transform: rotate(225deg);
+
+  top: 45%;
+  left: 15%;
+}
+
+#menuMobile:checked ~ label .menuMobile::before{
+  transform: rotate(-405deg);
+
+  top: 45%;
+  left: 15%;
+
+  width: 70%;
+  height: 10%;
+}
+
+.openNav{
+  display: none;
+
+  @media (max-width: 960px) {
+    display: flex;
+    width: 100%;
+
+    z-index: 999;
+
+    position: absolute;
+    top: 7rem;
+    left: 0;
+
+    background: var(--background);
+    transition: height 1s ease;
+
+    animation: heightChange 1s ease forwards alternate;
+
+    .openNavContent{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+
+      a{
+        color: var(--white);
+        padding: 1rem 1.25rem;
+      }
+    }
+  }
+}
+
+@keyframes heightChange {
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: 5rem;
   }
 }
