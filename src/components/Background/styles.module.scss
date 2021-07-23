@@ -3,8 +3,7 @@
 }
 
 .bg {
-  border: 1px solid red;
-  background: linear-gradient(180deg, #A020F0 1.2%, rgba(208, 144, 248, 0.8) 100%);;
+  background: linear-gradient(180deg, #A020F0 1.2%, rgba(208, 144, 248, 0.8) 100%);
   position: absolute;
 
   top: 0;
@@ -18,4 +17,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }

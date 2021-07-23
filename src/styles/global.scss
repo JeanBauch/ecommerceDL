@@ -16,6 +16,7 @@
   --primary-body-light: #B34DF3;
 
   --background: #601390;
+  --textBlueDark: #0D0047;
 
   --white: #FFFFFF;
 
@@ -35,7 +36,7 @@
 }
 
 body{
-  background: transparent; //#FFE0FA
+  background: #FFE0FA;
 }
 
 body, button {
@@ -57,14 +58,24 @@ a {
 
 h1 {
   font: 3rem;
+  line-height: 100%;
 }
 
 h2 {
   font: 2.25rem;
+  line-height: 110%;
 }
 
 h3 {
   font: 1.5rem;
+  line-height: 115%;
+  color: var(--textBlueDark);
+}
+
+h4 {
+  font: 1rem;
+  line-height: 130%;
+  color: var(--textBlueDark);
 }
 
 button {

@@ -5,23 +5,17 @@ import SwiperCore, {
 } from 'swiper/core';
 
 import { Header } from '../components/Header';
-import { Background } from '../components/Background';
+import { InfoFooter } from '../components/InfoFooter';
 
 import styles from './home.module.scss';
 
 SwiperCore.use([Autoplay,Pagination,Navigation]);
 
-//Tipagem da requisicao da API
-// type HomeProps = {
-
-// }
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.wrapper}>
       <Header />
-      <Background />
-
       <section className={styles.sliderContainer}>
         <div className={styles.sliderContent}>
           <Swiper
@@ -61,7 +55,8 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
-    </>
+      <InfoFooter />
+    </div>
   )
 }
 
