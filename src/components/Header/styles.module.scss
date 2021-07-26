@@ -24,6 +24,10 @@
 
   gap: 3.5rem;
 
+  img{
+    max-width: 100px;
+  }
+
   @media (max-width: 960px) {
     a {
       display: none;
@@ -33,6 +37,7 @@
 
 .menuRight{
   display: flex;
+  padding: 0.5rem 1rem;
 
   a{
     display: flex;
@@ -41,16 +46,27 @@
     transition: .7s ease;
 
     p{
-      font-size: 1rem;
-      color: #B3B3B3;
+      font-size: 0.9375rem;
+      color: #b3b3b3;
       margin-left: 10px;
       transition: .7s ease;
+    }
+
+    svg{
+      path{
+        transition: .7s ease;
+      }
     }
 
     &:hover{
       transform: translate3d(0,-4px,0);
       p{
         color: var(--white);
+      }
+      svg{
+        path{
+          fill: var(--white);
+        }
       }
     }
   }

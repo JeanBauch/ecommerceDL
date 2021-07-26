@@ -27,7 +27,7 @@ export default function Home() {
             }} 
             navigation={true}
             // autoplay={{
-            //   "delay": 3000,
+            //   "delay": 6000,
             //   "disableOnInteraction": false
             // }}
             onSlideChange={() => console.log('slide change')}
@@ -49,9 +49,27 @@ export default function Home() {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slider2}>
+                <div className={styles.slider2Content}>
+                  <header>
+                    <img src="/TextSlide2.svg" alt="Titulo do slider 2 - Modelos variados" />
+                  </header>
+                </div>
+
+                <div className={styles.slider2Img}>
+                  <img src="/slider2Img.svg" alt="" />
+                </div>
+
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.slider3}>
+                <img className={styles.imgSlider3} src="/bgSlider3.jpg" alt="Slider 3 - Conjutos em renda" />
+                <img className={styles.imgSlider3} src="/bgSlider3Mobile.jpg" alt="Slider 3 Mobile - Conjutos em renda" />
+              </div>
+            </SwiperSlide>
+            {/* <SwiperSlide>Slide 4</SwiperSlide> */}
           </Swiper>
         </div>
       </section>
