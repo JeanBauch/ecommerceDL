@@ -26,10 +26,10 @@ export default function Home() {
               "clickable": true
             }} 
             navigation={true}
-            // autoplay={{
-            //   "delay": 6000,
-            //   "disableOnInteraction": false
-            // }}
+            autoplay={{
+              "delay": 6000,
+              "disableOnInteraction": false
+            }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
@@ -69,7 +69,12 @@ export default function Home() {
                 <img className={styles.imgSlider3} src="/bgSlider3Mobile.jpg" alt="Slider 3 Mobile - Conjutos em renda" />
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>Slide 4</SwiperSlide> */}
+            <SwiperSlide>
+              <div className={styles.slider3}>
+                <img className={styles.imgSlider3} src="/bgSlider4.jpg" alt="Slider 4 - T-shirts" />
+                <img className={styles.imgSlider3} src="/bgSlider4Mobile.jpg" alt="Slider 4 Mobile - T-shirts" />
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
