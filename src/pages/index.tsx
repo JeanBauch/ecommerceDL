@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      <section className={styles.sliderContainer}>
+      {/* <section className={styles.sliderContainer}>
         <div className={styles.sliderContent}>
           <Swiper
             spaceBetween={50}
@@ -78,7 +78,7 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
+      </section> */}
       <WhatsappButton />
       <InfoFooter />
     </div>
