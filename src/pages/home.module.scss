@@ -5,17 +5,17 @@
   background: linear-gradient(180deg, #A020F0 1.2%, rgba(208, 144, 248, 0.8) 100%);
   position: relative;
 
-  &::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  // &::after{
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
 
-    width: 100%;
-    height: 20vh;
+  //   width: 100%;
+  //   height: 20vh;
 
-    background-image: url("/waves.svg");
-  }
+  //   background-image: url("/waves.svg");
+  // }
 
 }
 
@@ -43,8 +43,8 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 
-  background-image: url('/bg.jpg');
-  background-size: cover;
+  //background-image: url('/bg.jpg');
+  //background-size: cover;
   //background-image: linear-gradient(100.62deg, rgba(234, 133, 199, 0.9) 0%, rgba(178, 94, 149, 0.7) 99.99%);
 
   display: flex;
