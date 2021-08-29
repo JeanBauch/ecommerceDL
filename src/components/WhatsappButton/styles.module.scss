@@ -1,0 +1,20 @@
+.floatButtonWhatsapp{
+  position: fixed;
+
+  z-index: 999;
+
+  right: 2%;
+  bottom: 2%;
+
+  background-color: #00e676;
+  border-radius: 50%;
+
+  padding: 8px;
+  box-shadow: 1px 6px 24px 0 rgb(7 94 84 / 24%);
+}
+
+.btnIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

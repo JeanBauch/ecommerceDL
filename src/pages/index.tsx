@@ -6,6 +6,7 @@ import SwiperCore, {
 
 import { Header } from '../components/Header';
 import { InfoFooter } from '../components/InfoFooter';
+import { WhatsappButton } from '../components/WhatsappButton';
 
 import styles from './home.module.scss';
 
@@ -78,6 +79,7 @@ export default function Home() {
           </Swiper>
         </div>
       </section>
+      <WhatsappButton />
       <InfoFooter />
     </div>
   )
