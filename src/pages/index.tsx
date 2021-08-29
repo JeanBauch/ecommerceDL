@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.wrapper}>
       <Header />
-      {/* <section className={styles.sliderContainer}>
+      <section className={styles.sliderContainer}>
         <div className={styles.sliderContent}>
           <Swiper
             spaceBetween={50}
@@ -36,7 +36,7 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className={styles.slider}>
-                <header className={styles.sliderHeader}>
+                {/* <header className={styles.sliderHeader}>
                   <img src="/TextSlide1.svg" alt="" />
                 </header>
                 <div className={styles.sliderImg}>
@@ -47,11 +47,12 @@ export default function Home() {
                   <div className={styles.sliderItem}>
                     <img src="/mulher2.svg" alt="" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.slider2}>
+              <div>Teste2</div>
+              {/* <div className={styles.slider2}>
                 <div className={styles.slider2Content}>
                   <header>
                     <img src="/TextSlide2.svg" alt="Titulo do slider 2 - Modelos variados" />
@@ -62,23 +63,25 @@ export default function Home() {
                   <img src="/slider2Img.svg" alt="" />
                 </div>
 
-              </div>
+              </div> */}
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.slider3}>
+              <div>Teste3</div>
+              {/* <div className={styles.slider3}>
                 <img className={styles.imgSlider3} src="/bgSlider3.jpg" alt="Slider 3 - Conjutos em renda" />
                 <img className={styles.imgSlider3} src="/bgSlider3Mobile.jpg" alt="Slider 3 Mobile - Conjutos em renda" />
-              </div>
+              </div> */}
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.slider3}>
+              <div>Teste4</div>
+              {/* <div className={styles.slider3}>
                 <img className={styles.imgSlider3} src="/bgSlider4.jpg" alt="Slider 4 - T-shirts" />
                 <img className={styles.imgSlider3} src="/bgSlider4Mobile.jpg" alt="Slider 4 Mobile - T-shirts" />
-              </div>
+              </div> */}
             </SwiperSlide>
           </Swiper>
         </div>
-      </section> */}
+      </section>
       <WhatsappButton />
       <InfoFooter />
     </div>
