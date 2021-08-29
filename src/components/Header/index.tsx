@@ -39,7 +39,7 @@ export function Header() {
           <div className={styles.openNavContent}>
             <a href="" className="link">Conjuntos</a>
             <a href="" className="link">T Shirts</a>
-            <a href="#" className="link">Contate por whatsapp</a>
+            <a href="https://wa.me/5515996312092" className="link">Contate por whatsapp</a>
           </div>
         </nav>
       )}

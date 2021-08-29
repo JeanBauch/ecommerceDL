@@ -217,6 +217,15 @@
       }
     }
   }
+
+  @media (max-width: 520px) {
+    .openNavContent{
+      a{
+        padding: 1rem;
+        font-size: 0.85rem;
+      }
+    }
+  }
 }
 
 @keyframes heightChange {
