@@ -27,16 +27,16 @@ export default function Home() {
               "clickable": true
             }} 
             navigation={true}
-            autoplay={{
-              "delay": 6000,
-              "disableOnInteraction": false
-            }}
+            // autoplay={{
+            //   "delay": 6000,
+            //   "disableOnInteraction": false
+            // }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className={styles.slider}>
-                {/* <header className={styles.sliderHeader}>
+                <header className={styles.sliderHeader}>
                   <img src="/TextSlide1.svg" alt="" />
                 </header>
                 <div className={styles.sliderImg}>
@@ -47,7 +47,7 @@ export default function Home() {
                   <div className={styles.sliderItem}>
                     <img src="/mulher2.svg" alt="" />
                   </div>
-                </div> */}
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
